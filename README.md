@@ -39,7 +39,7 @@ This is a homework assignment for lesson 21 "Creating bots for Telegram" of the 
 /choice_reply – Выбор из нескольких пунктов с использованием ReplyKeyboardMarkup
 
 
-/string [upper | lower] text – В зависимости от параметров выводит текст большими / маленькими буквами или с первой буквой заглавной
+/string [upper | lower] text – В зависимости от параметров выводит текст большими / маленькими буквами или с первой буквой заглавной. Если в первом параметре указано что-либо кроме upper или lower - то считается, что ВЕСЬ текст после команды /string требуется выводить с первой заглавной буквой.
 
 <i>Пример</i>:
 
@@ -48,7 +48,7 @@ This is a homework assignment for lesson 21 "Creating bots for Telegram" of the 
  – Выводит текст "текст_для_обработки" маленькими буквами:
 <pre> /string lower <i>ТЕКСТ_ДЛЯ_ОБРАБОТКИ</i></pre>
  – Выводит текст "Текст_для_обработки" с первой заглавной буквой:
-<pre> /string upper <i>текст_для_обработки</i></pre>
+<pre> /string <i>текст_для_обработки</i></pre>
 
 
 /formatted_text – примеры форматирования текста в сообщениях.
